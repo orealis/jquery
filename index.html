@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title> j query</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <img src="assets/img/senalogo.png" width="50" height="50">
+        <a class="navbar-brand ps-3" href="index.html">SENA</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <!-- Navbar-->
+
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">EJERCICIOS</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+
+
+                        <div class="sb-sidenav-menu-heading">EJERCICIOS</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Ejercicio 1 Syntax
+                        </a>
+                        <a class="nav-link" href="#ejercicio2">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 2 The html() Method
+                        </a>
+                        <a class="nav-link" href="#ejercicio3">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 3 Modifying Attributes
+                        </a>
+                        <a class="nav-link" href="#ejercicio4">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 4 Hide/Show Elements
+                        </a>
+                        <a class="nav-link" href="#ejercicio5">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 5 Wrapped Sets
+                        </a>
+                        <a class="nav-link" href="#ejercicio6">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 6 Method Chaining
+                        </a>
+                        <a class="nav-link" href="#ejercicio7">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 7 Method Chaining
+                        </a>
+                        <a class="nav-link" href="#ejercicio8">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 8 The html() Method
+                        </a>
+                        <a class="nav-link" href="#ejercicio9">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 9 Loading Code From Another File
+                        </a>
+                        <a class="nav-link" href="#ejercicio10">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 10 Additional Material
+                        </a>
+                        <a class="nav-link" href="pruebaAjaxJson.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 11 Prueba ajaxPDOpropio
+                        </a>
+                        <a class="nav-link" href="pruebaAjaxMysqli.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 12 Prueba ajax mysqliclase
+                        </a>
+                        <a class="nav-link" href="pruebaAjaxPDO.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 13 Prueba ajaxmysqliPDOclase
+                        </a>
+                        <a class="nav-link" href="php/index.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 14 Prueba ajax PDO2
+                        </a>
+                        <a class="nav-link" href="../jquery/crud-ajax/index.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Ejercicio 15 Prueba ajax Mysqli2
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Ficha:</div>
+                    2252471
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">DOM (Document Object Model) and jQuery</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active">
+                            Orealis Ospina Puentes Ficha 2252471
+
+                        </li>
+                    </ol>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio2">primer ejercicio</a>
+
+                        </div>
+                        <div class="card-body">
+                            <div id="pandora">This is Pandora's box</div>
+                            <style>
+                                #pandora {
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    border: 2px solid green;
+                                    padding: 5px;
+                                }
+                            </style>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje1">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio3">Segundo ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <ol id="horcruxes">
+                                <li>currently empty</li>
+                            </ol>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje2">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio4">3 ejercicio</a>
+
+                        </div>
+                        <div class="card-body">
+
+                            <figure id="fig1">
+                                <img id="img1" src="assets/img/harrypotter.jpg" alt="Harry Potter" width="600px" height="300px">
+
+                                <figcaption id="cap1">Harry Potter es interpretado por Daniel Radcliffe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+
+                            <button type="button" class="btn btn-outline-dark" id="eje3">Ejecutar</button>
+                        </div>
+
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio5">4 ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <figure id="fig2">
+                                <img src="assets/img/hermione.jpg" alt="Hermione Granger" width="600px" height="300px">
+                                <figcaption>Hermione Granger es interpretado por Emma Watson</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje4">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio6">5 ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <figure id="fig3">
+                                <img src="assets/img/hermione.jpg" alt="Hermione Granger" width="300px" height="200px">
+                                <figcaption>Hermione Granger es interpretado por Emma Watson</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje5">Esconder</button>
+                            <button type="button" class="btn btn-outline-dark" id="eje51">mostrar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio7">6 ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <ol id="characters1">
+                                <li class="gryffindor">Harry</li>
+                                <li class="gryffindor">Ron</li>
+                                <li class="gryffindor">Hermione</li>
+                                <li class="gryffindor">Fred</li>
+                                <li class="gryffindor">George</li>
+                                <li class="ravenclaw">Cho</li>
+                                <li class="hufflepuff">Cedric</li>
+                                <li class="slytherin">Draco</li>
+                                <li class="slytherin">Crabbe</li>
+                                <li class="slytherin">Goyle</li>
+                            </ol>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje6">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio8">7 ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <figure id="fig4">
+                                <img id="img1" src="assets/img/harrypotter.jpg" alt="Harry Potter" width="300px" height="200px">
+
+                                <figcaption id="cap1">Harry Potter es interpretado por Daniel Radcliffe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje7">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio9">8 ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <ol id="characters2">
+                                <li class="gryffindor">Harry</li>
+                                <li class="gryffindor">Ron</li>
+                                <li class="gryffindor">Hermione</li>
+                                <li class="gryffindor">Fred</li>
+                                <li class="gryffindor">George</li>
+                                <li class="ravenclaw">Cho</li>
+                                <li class="hufflepuff">Cedric</li>
+                                <li class="slytherin">Draco</li>
+                                <li class="slytherin">Crabbe</li>
+                                <li class="slytherin">Goyle</li>
+                            </ol>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje8">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a name="ejercicio10">9 ejercicio</a>
+                        </div>
+                        <div class="card-body">
+                            <nav>
+                                <ul>
+                                    <li><a href="home.html">home</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="members.html">members</a></li>
+                                    <li><a href="joining.html">joining</a></li>
+                                    <li><a href="events.html">events</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje9">Ejecutar</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            10 ejercicio
+                        </div>
+                        <div class="card-body">
+                            <figure id="fig2a">
+                                <img src="assets/img/hermione.jpg" alt="Hermione Granger" width="300px" height="200px">
+                                <figcaption>Hermione Granger as played by Emma Watson</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-dark" id="eje10">Ejecutar</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Orealis Ospina Puentes 2021</div>
+                        <div>
+                            <a href="#">Privacy Policy</a> &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!---link j query-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--js propio -->
+    <script src="js/scripts.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+
+</html>

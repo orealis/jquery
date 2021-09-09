@@ -1,11 +1,12 @@
 <?php
-    require 'db_config.php';
+    require 'db_config.php'; 
 
     $num_rec_per_page = 25;
 
     if (isset($_GET["page"])) { $page = $_GET["page"]; } else { $page=1; };
 
     $start_from = ($page-1) * $num_rec_per_page;
+
 
     $sqlTotal ="select count(*) from items";
 

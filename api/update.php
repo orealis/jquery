@@ -1,5 +1,5 @@
 <?php
-    require 'db_config.php';
+    require 'db_config.php';//Esta incluyendo de forma obligatoria el db config
 
     $id = $_POST["id"];
 

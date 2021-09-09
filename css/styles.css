@@ -14,6 +14,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
+/*CSS DEL EJERCICIO DE AJAX COMIENZO*/
+
 .gryffindor {
     border: 2px solid red;
     background-color: gold;
@@ -33,6 +36,12 @@
     border: 2px solid blue;
     background-color: bronze;
 }
+
+
+/*CSS DEL EJERCICIO DE AJAX FINAL*/
+
+
+/*CSS ESTILOS DE LA PAGINA */
 
 :root {
     --bs-blue: #0d6efd;
@@ -5068,7 +5077,8 @@ fieldset:disabled .btn {
     float: left;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: var(--bs-breadcrumb-divider, "/")/* rtl: var(--bs-breadcrumb-divider, "/") */
+    content: var(--bs-breadcrumb-divider, "/")
+    /* rtl: var(--bs-breadcrumb-divider, "/") */
     ;
 }
 
@@ -6315,7 +6325,8 @@ fieldset:disabled .btn {
 .popover {
     position: absolute;
     top: 0;
-    left: 0/* rtl:ignore */
+    left: 0
+    /* rtl:ignore */
     ;
     z-index: 1070;
     display: block;
